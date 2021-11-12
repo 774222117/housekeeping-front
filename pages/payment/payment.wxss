@@ -1,0 +1,152 @@
+.top{
+  width: 100%;
+  /* height: 284rpx; */
+  /* position: relative; */
+  /* border: 1px solid red; */
+}
+.title{
+  font-size: 36rpx;
+  font-family: PingFang SC, PingFang SC-Medium;
+  font-weight: 500;
+  text-align: CENTER;
+  color: #ffffff;
+  margin-top: 107rpx;
+  margin-right: 60rpx;
+}
+.backIcon{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  float: left;
+  margin: 0 0 0 40rpx;
+}
+.index_bg{
+  width: 100%;
+  height: 502rpx;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.index_secces{
+  width: 115rpx;
+  height: 116rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 50rpx auto 0;
+
+}
+.toptext{
+  font-size: 32rpx;
+  font-family: PingFang SC, PingFang SC-Semibold;
+  font-weight: 600;
+  text-align: CENTER;
+  color: #ffffff;
+  margin-top: 187rpx;
+}
+
+.contents{
+  width: 691rpx;
+  height: 434rpx;
+  box-shadow: 0rpx 4rpx 20rpx 0rpx rgba(46,128,19,0.10); 
+  margin: 36rpx auto 0;
+}
+
+.contents .lines{
+  width: 100%;
+  height: 16rpx;
+  background: linear-gradient(90deg,#26780a, #1a6003 100%);
+  border-radius: 46rpx;
+}
+.contents .mains{
+  width: 672rpx;
+  height: 434rpx;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 16px 20px 0px rgba(1,154,67,0.06), 0px 15px 8px 0px rgba(65,145,38,0.24) inset, 0px 7px 5px 0px rgba(48,130,21,0.34) inset; 
+  margin: -8rpx auto 0;
+  overflow: hidden;
+}
+
+.priceBox{
+  width: 636rpx;
+  height: 363rpx;
+  margin: 71rpx auto 0;
+}
+
+.priceBox .titles{
+  width: 100%;
+  height: 45rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.priceBox .titles .icons{
+  width: 40rpx;
+  height:40rpx;
+  margin-right: 14rpx;
+}
+.priceBox .titles .texts{
+  font-size: 32rpx;
+  font-family: PingFang SC, PingFang SC-Medium;
+  font-weight: bold;
+  text-align: CENTER;
+  color: #333333;
+}
+
+.priceBox .infos{
+  width: 100%;
+  padding-left: 51rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  font-family: PingFang SC, PingFang SC-Medium;
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 10rpx;
+
+}
+.priceBox .infos .infoItem{
+  width: 100%;
+  height: 37rpx;
+  margin-bottom: 21rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priceBox .priceInfoItem{
+  width: 100%;
+  height: 114rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 35rpx;
+  padding-left: 40rpx;
+  border-top: 1px dashed #c9c9c9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imgsty{width: 100%;height: 100%;display: block;}
+.color3{color: #333333;}
+.color6{color: #666666;}
+.color9{color: #999999;}
+.colorg{color: #57AB58;}
+
+.center{
+  width: 354rpx;
+  height: 80rpx;
+  background: #fea020;
+  border-radius: 87rpx; 
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 70rpx;
+  margin: 0rpx auto;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  font-family: PingFang SC, PingFang SC-Medium;
+  font-weight: 500;                                                   
+  color: #ffffff;
+}

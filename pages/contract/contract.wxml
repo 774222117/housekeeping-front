@@ -1,0 +1,14 @@
+
+<import src="../../components/wxParse/wxParse.wxml" />
+<view class="top">
+  <view class="title"><span class="backIcon" bindtap="backUp"><image class="imgsty" src="../images/back.png"></image></span>合同详情</view>
+  <image class="index_bg" mode="scaleToFill" src="../images/indexs/topBg.png"></image>
+</view>
+
+<view class="contents">
+  <template is="wxParse" data="{{wxParseData:commodityDetails.nodes}}" />
+</view>
+<view class="footers">
+  <view class="center" bindtap="centerFun">确认，下一步 </view>
+</view>
+

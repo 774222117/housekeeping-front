@@ -1,0 +1,40 @@
+<!--pages/serveEffect/serveEffect.wxml-->
+<view class="top">
+  <view class="title"> <span class="backIcon" bindtap="backUp"><image class="imgsty" src="../images/back.png"></image></span> 确认支付</view>
+  <image class="index_bg" mode="scaleToFill" src="../images/payment/indexbg.png"></image>
+  <image class="index_secces" mode="scaleToFill" src="../images/payment/paybg.png"></image>
+  <view class="toptext">常客隆优选·高端家政</view>
+</view>
+
+<view class="contents">
+  <view class="lines"></view>
+  <view class="mains">
+    <view class="priceBox">
+      <view class="titles">
+        <view class="icons"><image class="imgsty" mode="scaleToFill" src="../images/indexs/icon1.svg"></image></view>
+        <view class="texts">客户信息</view>
+      </view>
+      <view class="infos">
+        <view class="infoItem">
+            <view class="color9">保姆薪资</view>
+            <view>￥{{orderInfo.nannySalary}}</view>
+        </view>
+        <view class="infoItem">
+            <view class="color9">服务费</view>
+            <view>￥{{orderInfo.agencyFeeA}}</view>
+        </view>
+        <view class="infoItem">
+            <view class="color9">优惠</view>
+            <view>-￥{{orderInfo.discountPrice}}</view>
+        </view>
+      </view>
+      <view class="priceInfoItem">
+            <view class="color9">实际金额</view>
+            <view class="textColor colorg">￥{{orderInfo.payPrice}}</view>
+        </view>
+    </view>
+  </view>
+</view>
+
+<view class="center" bindtap="paymentClick" wx:if="{{!orderIsTrue}}">确认支付</view>
+

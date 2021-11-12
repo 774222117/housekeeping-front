@@ -1,0 +1,96 @@
+<!--pages/serveEffect/serveEffect.wxml-->
+<wxs module="unit" src="../filter/filter.wxs"></wxs>
+<view class="top">
+  <view class="title"> <span class="backIcon" bindtap="backUp"><image class="imgsty" src="../images/back.png"></image></span> 服务生效</view>
+  <image class="index_bg" mode="scaleToFill" src="../images/serveEffect/topBg.png"></image>
+  <image class="index_secces" mode="scaleToFill" src="../images/serveEffect/secces.png"></image>
+
+</view>
+
+<view class="contents" wx:if="{{ !!orderInfo }}">
+  <view class="servInfo public"> 
+    <view class="content" style="border:none;">
+      <view class="titles">
+        <view class="icons"><image class="imgsty" mode="scaleToFill" src="../images/indexs/icon3.svg"></image></view>
+        <view class="texts">客户信息</view>
+      </view>
+      <view class="infos color3">
+        甲方
+      </view>
+      <view class="infos color6">
+        姓名：{{orderInfo.customerName}}
+      </view>
+      <view class="infos color6">
+        电话：{{orderInfo.phone}}
+      </view>
+      <view class="infos color3">
+        乙方
+      </view>
+      <view class="infos color6">
+        姓名：{{orderInfo.sellerName}}
+      </view>
+      <view class="infos color6">
+        公司：常客隆家政服务有限公司
+      </view>
+      <view class="infos color6">
+        电话：{{orderInfo.tele}}
+      </view>
+    </view>
+  </view>
+
+  <view class="servTimes public"> 
+    <view class="content">
+      <view class="titles">
+        <view class="icons"><image class="imgsty" mode="scaleToFill" src="../images/indexs/icon4.svg"></image></view>
+        <view class="texts">服务时间</view>
+      </view>
+      <view class="infos">
+        {{ unit.filterTime(orderInfo.startTime) }} ~ {{unit.filterTime(orderInfo.finishTime)}}
+      </view>
+    </view>
+  </view>
+
+  <view class="servCon public"> 
+    <view class="content">
+      <view class="titles">
+        <view class="icons"><image class="imgsty" mode="scaleToFill" src="../images/indexs/icon5.svg"></image></view>
+        <view class="texts">服务内容</view>
+      </view>
+      <view class="infos">
+        {{orderInfo.serviceItem}}
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="priceBox">
+  <view class="servPrice public"> 
+    <view class="content" style="border:none;">
+      <view class="titles">
+        <view class="icons"><image class="imgsty" mode="scaleToFill" src="../images/indexs/icon2.svg"></image></view>
+        <view class="texts">服务费用</view>
+      </view>
+      <view class="infos">
+        <view class="infoItem">
+            <view class="color9">保姆薪资</view>
+            <view>￥{{orderInfo.nannySalary}}</view>
+        </view>
+        <view class="infoItem">
+            <view class="color9">服务费</view>
+            <view>￥{{orderInfo.agencyFeeA}}</view>
+        </view>
+        <view class="infoItem">
+            <view class="color9">折扣</view>
+            <view>-￥{{orderInfo.discountPrice}}</view>
+        </view>
+        <view class="infoItem">
+            <view class="color9">实际金额</view>
+            <view class="textColor">￥{{orderInfo.payPrice}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="center" bindtap="centerFun">查看合同</view>
+

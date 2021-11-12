@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "服务生效",
+          "pathName": "pages/serveEffect/serveEffect",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "确认支付",
+          "pathName": "pages/payment/payment",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "合同",
+          "pathName": "pages/contract/contract",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "没有id",
+          "pathName": "pages/noOrder/noOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "ordersn=JZ2021111215000003",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

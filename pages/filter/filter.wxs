@@ -1,0 +1,12 @@
+
+var unit={
+  filterTimes:function (times){
+      var times1 = times.slice(0,10)
+      times1 = times1.split('-')
+      times1 = times1[0]+'年'+times1[1]+'月'+times1[2]+'日'
+      return times1
+  }
+}
+module.exports = {
+  filterTime: unit.filterTimes
+}

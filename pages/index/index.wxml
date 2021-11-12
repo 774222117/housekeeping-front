@@ -1,0 +1,80 @@
+<!--pages/indexs.wxml-->
+<wxs module="unit" src="../filter/filter.wxs"></wxs>
+<view class="top">
+  <view class="title">常客隆优选</view>
+  <image class="index_bg" mode="scaleToFill" src="../images/indexs/topBg.png"></image>
+</view>
+
+<view class="banner"><image class="imgsty" mode="scaleToFill" src="../images/indexs/topBg1.png"></image></view>
+
+<view class="contents" wx:if="{{!!orderInfo}}">
+  <view class="items mr32">
+    <view class="lefts">甲方{{app.globalData.ordersn}}</view>
+    <view class="rights">
+      <view class="itemInfo">姓名：{{orderInfo.customerName}}</view>
+      <view class="itemInfo">电话：{{orderInfo.phone}}</view>
+    </view>
+  </view>
+  <view class="items">
+    <view class="lefts">已方</view>
+    <view class="rights">
+      <view class="itemInfo">姓名：{{orderInfo.sellerName}}</view>
+      <view class="itemInfo">公司：常客隆家政服务有限公司</view>
+      <view class="itemInfo">电话：{{orderInfo.tele}}</view>
+    </view>
+  </view>
+
+  <view class="servTimes public">
+    <view class="content">
+      <view class="titles">
+        <view class="icons"><image class="imgsty" mode="scaleToFill" src="../images/indexs/icon4.svg"></image></view>
+        <view class="texts">服务时间</view>
+      </view>
+      <view class="infos">
+        {{ unit.filterTime(orderInfo.startTime) }} ~ {{unit.filterTime(orderInfo.finishTime)}}
+      </view>
+    </view>
+  </view>
+
+  <view class="servCon public">
+    <view class="content">
+      <view class="titles">
+        <view class="icons"><image class="imgsty" mode="scaleToFill" src="../images/indexs/icon5.svg"></image></view>
+        <view class="texts">服务内容</view>
+      </view>
+      <view class="infos">
+        {{orderInfo.serviceItem}}
+        <!-- 半⾃理⼈，照顾⽇常⽣活，协助穿⾐、洗澡、去卫⽣间、提醒⽤药、推坐轮椅遛弯等 -->
+      </view>
+    </view>
+  </view>
+
+  <view class="servPrice public">
+    <view class="content">
+      <view class="titles">
+        <view class="icons"><image class="imgsty" mode="scaleToFill" src="../images/indexs/icon2.svg"></image></view>
+        <view class="texts">服务费用</view>
+      </view>
+      <view class="infos">
+        <view class="infoItem">
+            <view>保姆薪资</view>
+            <view>￥{{orderInfo.nannySalary}}</view>
+        </view>
+        <view class="infoItem">
+            <view>服务费</view>
+            <view>￥{{orderInfo.agencyFeeA}}</view>
+        </view>
+        <view class="infoItem">
+            <view>折扣</view>
+            <view>-￥{{orderInfo.discountPrice}}</view>
+        </view>
+        <view class="infoItem">
+            <view>实际金额</view>
+            <view class="textColor">￥{{orderInfo.payPrice}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="center" bindtap="centerFun"  wx:if="{{!!ordersn}}">确认，下一步 </view>
+

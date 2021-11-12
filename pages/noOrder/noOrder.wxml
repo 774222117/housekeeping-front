@@ -1,0 +1,21 @@
+<!--pages/indexs.wxml-->
+<wxs module="unit" src="../filter/filter.wxs"></wxs>
+<view class="top">
+  <view class="title">常客隆优选</view>
+  <image class="index_bg" mode="scaleToFill" src="../images/noOrder/topBg.png"></image>
+</view>
+
+<view class="bgNoOrder">
+  <image class="imgsty" mode="full" src="../images/noOrder/bgNoOrder.png"></image>
+</view>
+
+<view class="noOrderText1">
+  您当前没有订单
+</view>
+<view class="noOrderText2">
+  如有需求请联系常客隆家政
+</view>
+<view class="noOrderText3">
+  <view class="noOrderIcon"> <image class="imgsty" mode="full" src="../images/noOrder/icon.png"></image></view>
+  <view class="noOrderPhone">400-123-123</view>
+</view>
